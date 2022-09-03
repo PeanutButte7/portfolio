@@ -1,4 +1,5 @@
 import { ReactNode } from 'react';
+import { LayoutStyled } from './Layout.styles';
 
 interface LayoutProps {
     children: ReactNode;
@@ -6,8 +7,8 @@ interface LayoutProps {
 
 export function Layout({ children }: LayoutProps) {
     return (
-        <div>
+        <LayoutStyled>
             <main>{children}</main>
-        </div>
+        </LayoutStyled>
     );
 }
