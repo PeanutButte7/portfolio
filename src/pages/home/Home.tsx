@@ -2,6 +2,7 @@ import { Button } from '../../components/UI/Button/Button';
 import { IconExternalLink } from '@tabler/icons';
 import { ButtonRow, Headline, HomeStyled, Name } from './Home.styles';
 import { Typography } from 'components/UI';
+import Link from 'next/link';
 
 export default function Home() {
     return (
@@ -12,41 +13,12 @@ export default function Home() {
                 <Typography size='lg' type='h3'>
                     See my:
                 </Typography>
+                <Link href='projects' passHref>
+                    <Button>Projects</Button>
+                </Link>
+                <Button style='secondary'>Skills</Button>
+                <Button style='secondary'>Journey</Button>
                 <Button
-                    size={{
-                        '@initial': 'large',
-                        '@mobile': 'small',
-                        '@mobileXL': 'medium',
-                    }}
-                >
-                    Projects
-                </Button>
-                <Button
-                    size={{
-                        '@initial': 'large',
-                        '@mobile': 'small',
-                        '@mobileXL': 'medium',
-                    }}
-                    style='secondary'
-                >
-                    Skills
-                </Button>
-                <Button
-                    size={{
-                        '@initial': 'large',
-                        '@mobile': 'small',
-                        '@mobileXL': 'medium',
-                    }}
-                    style='secondary'
-                >
-                    Journey
-                </Button>
-                <Button
-                    size={{
-                        '@initial': 'large',
-                        '@mobile': 'small',
-                        '@mobileXL': 'medium',
-                    }}
                     style='secondary'
                     href='https://github.com/PeanutButte7'
                 >

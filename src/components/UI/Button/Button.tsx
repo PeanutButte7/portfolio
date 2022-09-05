@@ -23,7 +23,15 @@ export const Button = forwardRef<ButtonRef, ButtonProps>(
             <ButtonStyled
                 ref={ref}
                 type={type}
-                size={size}
+                size={
+                    size
+                        ? size
+                        : {
+                              '@initial': 'large',
+                              '@mobile': 'small',
+                              '@mobileXL': 'medium',
+                          }
+                }
                 style={style}
                 {...props}
             >
