@@ -1,9 +1,30 @@
-import type { NextPage } from 'next'
+import { ProjectsPage } from 'components/Projects';
+import { GetStaticProps } from 'next';
+import { getProjectsData } from '../../lib/projects';
 
-const Home: NextPage = () => {
-    return (
-        <p>hi</p>
-    )
+export interface Project {
+    id: string;
+    title: string;
+    description: string;
+    link: string;
+    type: string;
+    image: string;
 }
 
-export default Home
+interface ProjectsProps {
+    projects: Project[];
+}
+
+export default function Projects({ projects }: ProjectsProps) {
+    return <ProjectsPage projects={projects}></ProjectsPage>;
+}
+
+export const getStaticProps: GetStaticProps = async () => {
+    const projects = getProjectsData();
+
+    return {
+        props: {
+            projects,
+        },
+    };
+};

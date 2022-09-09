@@ -1,10 +1,9 @@
-import { Button } from '../../components/UI/Button/Button';
 import { IconExternalLink } from '@tabler/icons';
-import { ButtonRow, Headline, HomeStyled, Name } from './Home.styles';
-import { Typography } from 'components/UI';
+import { ButtonRow, Headline, HomeStyled, Name } from './HomePage.styles';
+import { Button, Typography } from 'components/UI';
 import Link from 'next/link';
 
-export default function Home() {
+export function HomePage() {
     return (
         <HomeStyled>
             <Name>Adam Bárta</Name>

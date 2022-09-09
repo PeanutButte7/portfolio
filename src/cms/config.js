@@ -9,9 +9,9 @@ export default {
     public_folder: 'img',
     collections: [
         {
-            name: 'project',
-            label: 'Project',
-            folder: 'project',
+            name: 'projects',
+            label: 'Projects',
+            folder: 'projects',
             create: true,
             fields: [
                 {
