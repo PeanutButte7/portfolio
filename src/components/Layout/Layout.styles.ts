@@ -1,10 +1,15 @@
 import { styled } from 'styles';
 
 export const LayoutStyled = styled('div', {
-    backgroundColor: '$myRed',
-    mx: '10vw',
+    display: 'flex',
+    flexDirection: 'column',
+    gap: 20,
 
-    '@desktopXL': {
-        marginLeft: '20vw',
+    '& main': {
+        mx: '10vw',
+
+        '@desktopXL': {
+            marginLeft: '20vw',
+        },
     },
 });

@@ -28,6 +28,7 @@ export default {
                     name: 'link',
                     label: 'Link',
                     widget: 'string',
+                    required: false,
                 },
                 {
                     name: 'type',

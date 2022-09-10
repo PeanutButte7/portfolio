@@ -26,6 +26,10 @@ export const Typography = styled('p', {
                 color: '$highContrastText',
                 fontVariationSettings: "'wdth' 145, 'wght' 1000, 'opsz' 100",
             },
+            h2: {
+                color: '$highContrastText',
+                fontVariationSettings: "'wdth' 145, 'wght' 1000",
+            },
             h3: {
                 color: '$highContrastText',
                 fontVariationSettings: "'wdth' 120, 'wght' 600",
