@@ -14,19 +14,23 @@ export interface FilterButtonProps
     extends VariantProps<typeof FilterButtonStyled>,
         NativeButtonAttributes {
     children: ReactNode;
-    style: string;
+    accentColor?: string;
+    mainColor?: string;
 }
 
 export const FilterButton = forwardRef<ButtonRef, FilterButtonProps>(
-    ({ children, type, style, ...props }: FilterButtonProps, ref) => {
+    (
+        { children, type, accentColor, mainColor, ...props }: FilterButtonProps,
+        ref
+    ) => {
         return (
             <FilterButtonStyled
                 ref={ref}
                 type={type}
                 {...props}
                 css={{
-                    color: getAccentColor(style),
-                    svg: { color: getMainColor(style) },
+                    color: accentColor ? accentColor : '$almostBlack',
+                    svg: { color: mainColor ? mainColor : '$almostBlack' },
                 }}
             >
                 <a type='button'>{children}</a>
@@ -35,25 +39,3 @@ export const FilterButton = forwardRef<ButtonRef, FilterButtonProps>(
     }
 );
 FilterButton.displayName = 'FilterButton';
-
-function getAccentColor(type: string) {
-    switch (type) {
-        case 'web':
-            return '$webBackground';
-        case 'design':
-            return '$designBackground';
-        case 'game':
-            return '$gameBackground';
-    }
-}
-
-function getMainColor(type: string) {
-    switch (type) {
-        case 'web':
-            return '$web';
-        case 'design':
-            return '$design';
-        case 'game':
-            return '$game';
-    }
-}

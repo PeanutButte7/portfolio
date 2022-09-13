@@ -15,7 +15,8 @@
     "netlify-cms-app": "^2.15.72",
     "next": "12.2.5",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-indiana-drag-scroll": "^2.2.0"
   },
   "devDependencies": {
     "@types/node": "18.7.13",
