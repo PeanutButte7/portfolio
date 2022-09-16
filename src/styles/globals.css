@@ -19,6 +19,10 @@ html, body {
     height: 100%;
 }
 
+#__next {
+    height: 100%;
+}
+
 /*
   Typographic tweaks!
   4. Add accessible line-height

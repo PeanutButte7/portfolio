@@ -6,18 +6,16 @@ export const ProjectsPageStyled = styled('div', {
     gap: 50,
 });
 
-export const Header = styled('div', {
-    mx: '10vw',
-});
-
 export const ProjectCardRow = styled('div', {
     '& > div': {
-        display: 'grid',
+        display: 'flex',
         gridAutoFlow: 'column',
         gap: 50,
         paddingLeft: '10vw',
+        flexWrap: 'nowrap',
 
         overflowX: 'auto',
+        cursor: 'grab',
     },
 });
 
@@ -25,4 +23,5 @@ export const Filters = styled('div', {
     display: 'flex',
     direction: 'row',
     gap: 20,
+    mx: '10vw',
 });

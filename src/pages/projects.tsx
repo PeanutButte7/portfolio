@@ -1,6 +1,7 @@
 import { ProjectsPage } from 'components/Projects';
 import { GetStaticProps } from 'next';
 import { getProjectsData } from '../../lib/projects';
+import { Layout } from '../components/Layout';
 
 export interface Project {
     id: string;
@@ -16,7 +17,11 @@ interface ProjectsProps {
 }
 
 export default function Projects({ projects }: ProjectsProps) {
-    return <ProjectsPage projects={projects}></ProjectsPage>;
+    return (
+        <Layout headerText='Projects_'>
+            <ProjectsPage projects={projects} />
+        </Layout>
+    );
 }
 
 export const getStaticProps: GetStaticProps = async () => {

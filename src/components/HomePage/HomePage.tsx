@@ -7,7 +7,7 @@ export function HomePage() {
     return (
         <HomeStyled>
             <Name>Adam Bárta</Name>
-            <Headline className='headline'>Let’s get to the point_</Headline>
+            <Headline>Let’s get to the point_</Headline>
             <ButtonRow>
                 <Typography size='lg' type='h3'>
                     See my:

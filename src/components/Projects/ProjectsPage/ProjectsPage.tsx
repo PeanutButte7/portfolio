@@ -1,9 +1,7 @@
-import { Typography } from 'components/UI';
 import { ProjectCard } from 'components/Projects';
 import { Project } from 'pages/projects';
 import {
     Filters,
-    Header,
     ProjectCardRow,
     ProjectsPageStyled,
 } from './ProjectsPage.styles';
@@ -53,26 +51,22 @@ export function ProjectsPage({ projects }: ProjectsPageProps) {
 
     return (
         <ProjectsPageStyled>
-            <Header>
-                <Typography type='h1' size='xxl'>
-                    Projects_
-                </Typography>
-                <Filters>
-                    {filters.map(({ label, type }) => (
-                        <FilterButton
-                            accentColor={getAccentColor(type)}
-                            mainColor={getMainColor(type)}
-                            key={type}
-                            onClick={() => filterProjects(type)}
-                        >
-                            {type == Filter.Web && <IconWorld />}
-                            {type == Filter.Design && <IconDragDrop />}
-                            {type == Filter.Game && <IconBrandAppleArcade />}
-                            {label}
-                        </FilterButton>
-                    ))}
-                </Filters>
-            </Header>
+            <Filters>
+                {filters.map(({ label, type }) => (
+                    <FilterButton
+                        accentColor={getAccentColor(type)}
+                        mainColor={getMainColor(type)}
+                        active={activeFilter === type}
+                        key={type}
+                        onClick={() => filterProjects(type)}
+                    >
+                        {type == Filter.Web && <IconWorld />}
+                        {type == Filter.Design && <IconDragDrop />}
+                        {type == Filter.Game && <IconBrandAppleArcade />}
+                        {label}
+                    </FilterButton>
+                ))}
+            </Filters>
             <ProjectCardRow>
                 <ScrollContainer>
                     {filteredProjects.map((project) => (

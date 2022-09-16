@@ -62,7 +62,7 @@ export const Headline = styled('h1', {
     backgroundSize: '700px, 700px',
 
     '@mobileXL': {
-        fontSize: 56,
+        fontSize: 52,
     },
 
     '@desktop': {

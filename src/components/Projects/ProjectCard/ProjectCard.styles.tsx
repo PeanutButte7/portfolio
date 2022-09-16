@@ -11,6 +11,9 @@ export const ProjectCardStyled = styled('div', {
     border: '4px solid $colors$almostBlack',
     borderRadius: '10px',
     overflow: 'hidden',
+
+    // Allows the cards to overflow in horizontal menu
+    flex: '0 0 auto',
 });
 
 export const Header = styled('div', {

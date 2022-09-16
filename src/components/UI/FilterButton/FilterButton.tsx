@@ -16,11 +16,19 @@ export interface FilterButtonProps
     children: ReactNode;
     accentColor?: string;
     mainColor?: string;
+    active?: boolean;
 }
 
 export const FilterButton = forwardRef<ButtonRef, FilterButtonProps>(
     (
-        { children, type, accentColor, mainColor, ...props }: FilterButtonProps,
+        {
+            children,
+            type,
+            accentColor,
+            mainColor,
+            active,
+            ...props
+        }: FilterButtonProps,
         ref
     ) => {
         return (
@@ -29,8 +37,11 @@ export const FilterButton = forwardRef<ButtonRef, FilterButtonProps>(
                 type={type}
                 {...props}
                 css={{
-                    color: accentColor ? accentColor : '$almostBlack',
+                    color: active ? mainColor : accentColor,
                     svg: { color: mainColor ? mainColor : '$almostBlack' },
+                    boxShadow: active ? '2px 2px 0px 0px' : '5px 5px 0px 0px',
+                    bottom: active ? -3 : 0,
+                    right: active ? -3 : 0,
                 }}
             >
                 <a type='button'>{children}</a>
