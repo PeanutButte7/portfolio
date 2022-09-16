@@ -1,5 +1,5 @@
 ---
-title: Registration Design Concept
+title: Registration Design
 description: A design concept for a Fiverr like website with Dashboards and
   Registration pages.
 type: design
