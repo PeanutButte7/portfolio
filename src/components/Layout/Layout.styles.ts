@@ -10,4 +10,17 @@ export const LayoutStyled = styled('div', {
     '& > p': {
         marginLeft: '10vw',
     },
+
+    variants: {
+        noMargin: {
+            false: {
+                '& main': {
+                    mx: '10vw',
+                },
+            },
+        },
+    },
+    defaultVariants: {
+        noMargin: false,
+    },
 });

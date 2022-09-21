@@ -59,12 +59,7 @@ export default {
                     label: 'Skills',
                     widget: 'list',
                     field: { label: 'Skill', name: 'skill', widget: 'string' },
-                },
-                {
-                    name: 'link',
-                    label: 'Link',
-                    widget: 'string',
-                    required: false,
+                    summary: '{{fields.skill}}',
                 },
             ],
         },

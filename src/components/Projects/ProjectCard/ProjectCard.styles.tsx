@@ -6,7 +6,7 @@ export const ProjectCardStyled = styled('div', {
     alignItems: 'center',
     gap: 20,
     paddingTop: 20,
-    width: 560,
+    width: 300,
 
     border: '4px solid $colors$almostBlack',
     borderRadius: '10px',
@@ -14,6 +14,10 @@ export const ProjectCardStyled = styled('div', {
 
     // Allows the cards to overflow in horizontal menu
     flex: '0 0 auto',
+
+    '@desktop': {
+        width: 560,
+    },
 });
 
 export const Header = styled('div', {
@@ -24,6 +28,8 @@ export const Header = styled('div', {
     gap: 25,
     px: '30px',
     height: 100,
+
+    '@desktop': {},
 });
 
 export const HeaderText = styled('div', {

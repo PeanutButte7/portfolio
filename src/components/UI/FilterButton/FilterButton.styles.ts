@@ -5,15 +5,20 @@ export const FilterButtonStyled = styled('button', {
 
     fontFamily: '$robotoFlex',
     fontVariationSettings: "'wdth' 120, 'wght' 600",
-    fontSize: '$xl',
+    fontSize: '$md',
+
+    '& svg': {
+        width: '32',
+        height: 32,
+    },
 
     backgroundColor: '$almostWhite',
     boxShadow: '5px 5px 0px 0px',
     border: '3px solid $almostBlack',
     borderRadius: 8,
 
-    px: '30px',
-    py: '10px',
+    px: '1.2em',
+    py: '0.4em',
 
     '& *': {
         display: 'flex',
@@ -30,12 +35,16 @@ export const FilterButtonStyled = styled('button', {
         right: -3,
     },
 
-    '& svg': {
-        width: 42,
-        height: 42,
-    },
-
     '& a': {
         color: '$highContrastText',
+    },
+
+    '@desktop': {
+        fontSize: '$xl',
+
+        '& svg': {
+            width: 42,
+            height: 42,
+        },
     },
 });

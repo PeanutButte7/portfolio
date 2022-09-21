@@ -21,7 +21,9 @@ export const ProjectCardRow = styled('div', {
 
 export const Filters = styled('div', {
     display: 'flex',
-    direction: 'row',
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    alignItems: 'flex-start',
     gap: 20,
-    mx: '10vw',
+    marginLeft: '10vw',
 });

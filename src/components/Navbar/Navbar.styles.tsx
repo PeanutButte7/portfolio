@@ -1,7 +1,14 @@
 import { styled } from 'styles';
 
 export const NavbarStyled = styled('div', {
-    display: 'flex',
+    '@mobile': {
+        display: 'none',
+    },
+
+    '@desktop': {
+        display: 'flex',
+    },
+
     flexDirection: 'row',
     justifyContent: 'space-between',
     px: '10vw',
@@ -12,6 +19,10 @@ export const NavbarStyled = styled('div', {
 
     '& p': {
         cursor: 'pointer',
+
+        '&:hover': {
+            textDecoration: 'underline',
+        },
     },
 });
 

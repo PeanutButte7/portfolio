@@ -18,7 +18,7 @@ interface ProjectsProps {
 
 export default function Projects({ projects }: ProjectsProps) {
     return (
-        <Layout headerText='Projects_'>
+        <Layout headerText='Projects_' noMargin>
             <ProjectsPage projects={projects} />
         </Layout>
     );

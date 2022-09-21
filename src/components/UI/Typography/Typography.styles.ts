@@ -9,16 +9,32 @@ export const Typography = styled('p', {
                 fontSize: '$sm',
             },
             md: {
-                fontSize: '$md',
+                fontSize: '$sm',
+
+                '@desktop': {
+                    fontSize: '$md',
+                },
             },
             lg: {
-                fontSize: '$lg',
+                fontSize: '$md',
+
+                '@desktop': {
+                    fontSize: '$lg',
+                },
             },
             xl: {
-                fontSize: '$xl',
+                fontSize: '$lg',
+
+                '@desktop': {
+                    fontSize: '$xl',
+                },
             },
             xxl: {
-                fontSize: '$xxl',
+                fontSize: '40px',
+
+                '@desktop': {
+                    fontSize: '$xxl',
+                },
             },
         },
         type: {

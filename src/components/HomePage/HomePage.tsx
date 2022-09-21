@@ -15,8 +15,7 @@ export function HomePage() {
                 <Link href='projects' passHref>
                     <Button>Projects</Button>
                 </Link>
-                <Button style='secondary'>Skills</Button>
-                <Button style='secondary'>Journey</Button>
+                <Button style='secondary'>About me</Button>
                 <Button
                     style='secondary'
                     href='https://github.com/PeanutButte7'

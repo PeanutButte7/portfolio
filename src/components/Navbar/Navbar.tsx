@@ -11,18 +11,22 @@ export function Navbar() {
                 </Typography>
             </Link>
             <RightSection>
-                <Typography type='h3' size='xl'>
-                    Projects
-                </Typography>
-                <Typography type='h3' size='xl'>
-                    Skills
-                </Typography>
-                <Typography type='h3' size='xl'>
-                    About me
-                </Typography>
-                <Typography type='h3' size='xl'>
-                    Contact
-                </Typography>
+                <Link href='projects' passHref>
+                    <Typography type='h3' size='xl'>
+                        Projects
+                    </Typography>
+                </Link>
+
+                <Link href='about' passHref>
+                    <Typography type='h3' size='xl'>
+                        About me
+                    </Typography>
+                </Link>
+                <Link href='contact' passHref>
+                    <Typography type='h3' size='xl'>
+                        Contact
+                    </Typography>
+                </Link>
             </RightSection>
         </NavbarStyled>
     );
