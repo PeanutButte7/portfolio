@@ -43,5 +43,30 @@ export default {
                 },
             ],
         },
+        {
+            name: 'skillGroups',
+            label: 'Skill Groups',
+            folder: 'skillGroups',
+            create: true,
+            fields: [
+                {
+                    name: 'title',
+                    label: 'Title',
+                    widget: 'string',
+                },
+                {
+                    name: 'skills',
+                    label: 'Skills',
+                    widget: 'list',
+                    field: { label: 'Skill', name: 'skill', widget: 'string' },
+                },
+                {
+                    name: 'link',
+                    label: 'Link',
+                    widget: 'string',
+                    required: false,
+                },
+            ],
+        },
     ],
 };
