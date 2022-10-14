@@ -14,7 +14,7 @@ export function Layout({ children, headerText, noMargin }: LayoutProps) {
         <LayoutStyled noMargin={noMargin}>
             <Navbar></Navbar>
             {headerText && (
-                <Typography type='h1' size='xxl'>
+                <Typography type='h1' size='xxxl' className='customHeading'>
                     {headerText}
                 </Typography>
             )}

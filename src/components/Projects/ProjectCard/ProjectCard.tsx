@@ -20,7 +20,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
         >
             <Header>
                 <HeaderText>
-                    <Typography type='h2' size='xl'>
+                    <Typography type='h2' size='xxl'>
                         {project.title}
                     </Typography>
                     <Typography type='paragraph' size='sm'>
@@ -29,7 +29,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
                 </HeaderText>
                 <HeaderLink onClick={() => window.open(project.link, '_blank')}>
                     <IconExternalLink />
-                    <Typography type='paragraph' size='xl'>
+                    <Typography type='paragraph' size='xxl'>
                         Learn
                         <br />
                         more

@@ -38,9 +38,10 @@ export const { styled, css, getCssText, config } = createStitches({
         fontSizes: {
             sm: '14px',
             md: '16px',
-            lg: '24px',
-            xl: '28px',
-            xxl: '64px',
+            lg: '20px',
+            xl: '24px',
+            xxl: '28px',
+            xxxl: '64px',
         },
     },
     utils: {

@@ -30,10 +30,17 @@ export const Typography = styled('p', {
                 },
             },
             xxl: {
-                fontSize: '40px',
+                fontSize: '$xl',
 
                 '@desktop': {
                     fontSize: '$xxl',
+                },
+            },
+            xxxl: {
+                fontSize: '40px',
+
+                '@desktop': {
+                    fontSize: '$xxxl',
                 },
             },
         },
@@ -48,11 +55,15 @@ export const Typography = styled('p', {
             },
             h3: {
                 color: '$highContrastText',
-                fontVariationSettings: "'wdth' 120, 'wght' 600",
+                fontVariationSettings: "'wdth' 145, 'wght' 600",
             },
             paragraph: {
                 color: '$lowContrastText',
                 fontVariationSettings: "'wdth' 120, 'wght' 400",
+            },
+            skill: {
+                color: '$highContrastText',
+                fontVariationSettings: "'wdth' 150",
             },
         },
     },

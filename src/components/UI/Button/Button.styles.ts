@@ -10,6 +10,7 @@ export const ButtonStyled = styled('button', {
     border: '3px solid $almostBlack',
     borderRadius: 8,
 
+    // For adding icon
     '& *': {
         display: 'flex',
         flexDirection: 'row',
@@ -18,6 +19,7 @@ export const ButtonStyled = styled('button', {
         gap: 10,
     },
 
+    // Hover effect
     '&:hover': {
         cursor: 'pointer',
         boxShadow: '2px 2px 0px 0px $colors$almostBlack',
@@ -32,6 +34,17 @@ export const ButtonStyled = styled('button', {
             },
             secondary: {
                 backgroundColor: '$lightBackground',
+            },
+            noShadow: {
+                boxShadow: 'none',
+                backgroundColor: '$lightBackground',
+
+                '&:hover': {
+                    backgroundColor: '$lightTurquoise',
+                    boxShadow: 'none',
+                    bottom: 0,
+                    right: 0,
+                },
             },
         },
         size: {
