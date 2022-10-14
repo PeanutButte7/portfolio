@@ -4,9 +4,8 @@ export const ProjectCardStyled = styled('div', {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    gap: 20,
     paddingTop: 20,
-    width: 300,
+    justifyContent: 'space-between',
 
     border: '4px solid $colors$almostBlack',
     borderRadius: '10px',
@@ -17,6 +16,7 @@ export const ProjectCardStyled = styled('div', {
 
     '@desktop': {
         width: 560,
+        gap: 20,
     },
 });
 
@@ -27,9 +27,10 @@ export const Header = styled('div', {
     alignItems: 'flex-start',
     gap: 25,
     px: '30px',
-    height: 100,
 
-    '@desktop': {},
+    '@desktop': {
+        height: 100,
+    },
 });
 
 export const HeaderText = styled('div', {
@@ -37,27 +38,37 @@ export const HeaderText = styled('div', {
     flexDirection: 'column',
     justifyContent: 'start',
     gap: 10,
+    marginBottom: '1rem',
 
     '& > *:last-child': {
-        lineHeight: '17px',
+        lineHeight: '1.1rem',
     },
 });
 
 export const HeaderLink = styled('div', {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'flex-end',
-    alignSelf: 'center',
-    cursor: 'pointer',
+    display: 'none',
 
-    '& p': {
-        color: '$almostBlack',
-        fontVariationSettings: "'wdth' 120, 'wght' 500",
-        lineHeight: '32px',
+    '@desktop': {
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'flex-end',
+        alignSelf: 'center',
+        cursor: 'pointer',
+
+        '& p': {
+            color: '$almostBlack',
+            fontVariationSettings: "'wdth' 120, 'wght' 500",
+            lineHeight: '32px',
+        },
     },
 });
 
 export const Line = styled('hr', {
-    color: '$almostGrey',
-    width: '90%',
+    display: 'none',
+
+    '@desktop': {
+        display: 'block',
+        color: '$almostGrey',
+        width: '90%',
+    },
 });

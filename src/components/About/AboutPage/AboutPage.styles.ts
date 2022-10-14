@@ -2,8 +2,12 @@ import { styled } from 'styles';
 
 export const AboutCardGroup = styled('div', {
     display: 'flex',
-    flexDirection: 'row',
+    flexDirection: 'column',
     gap: '2rem',
+
+    '@desktop': {
+        flexDirection: 'row',
+    },
 });
 
 export const AboutPageStyled = styled('div', {
@@ -11,7 +15,9 @@ export const AboutPageStyled = styled('div', {
     flexDirection: 'column',
     gap: '2rem',
 
-    '& > p': {
-        width: '60vw',
+    '@desktop': {
+        '& > p': {
+            width: '60vw',
+        },
     },
 });

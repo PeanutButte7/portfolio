@@ -1,15 +1,17 @@
 import { styled } from 'styles';
 
 export const FilterButtonStyled = styled('button', {
+    display: 'flex',
+    flexShrink: 0,
     position: 'relative',
 
     fontFamily: '$robotoFlex',
     fontVariationSettings: "'wdth' 120, 'wght' 600",
-    fontSize: '$md',
+    fontSize: '$lg',
 
     '& svg': {
-        width: '32',
-        height: 32,
+        minWidth: 24,
+        maxWidth: 32,
     },
 
     backgroundColor: '$almostWhite',
