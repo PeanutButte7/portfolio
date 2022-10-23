@@ -25,6 +25,12 @@ export default {
                     widget: 'string',
                 },
                 {
+                    name: 'priority',
+                    label: 'Priority',
+                    widget: 'number',
+                    default: 0,
+                },
+                {
                     name: 'link',
                     label: 'Link',
                     widget: 'string',
