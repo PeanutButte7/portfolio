@@ -38,6 +38,7 @@ export const FilterButton = forwardRef<ButtonRef, FilterButtonProps>(
                 {...props}
                 css={{
                     color: active ? mainColor : accentColor,
+                    backgroundColor: active ? accentColor : '$almostWhite',
                     svg: { color: mainColor ? mainColor : '$almostBlack' },
                     boxShadow: active ? '2px 2px 0px 0px' : '5px 5px 0px 0px',
                     bottom: active ? -3 : 0,
