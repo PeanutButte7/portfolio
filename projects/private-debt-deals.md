@@ -1,6 +1,8 @@
 ---
 title: Private Debt Deals
-description: Design for a website focused on listing private debt deals.
+description: "Design for a client website focused on listing and entering
+  European private debt transactions. The goal of this design was a modern and
+  minimalistic look. "
 type: design
 image: https://www.adam-barta.com/img/PDD.3e211508.png
 ---
