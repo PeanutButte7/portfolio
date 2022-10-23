@@ -7,15 +7,20 @@ export function HomePage() {
     return (
         <HomeStyled>
             <Name>Adam Bárta</Name>
-            <Headline>Let’s get to the point_</Headline>
+            <Headline>Developer, designer, writer_</Headline>
             <ButtonRow>
                 <Typography size='lg' type='h3'>
-                    See my:
+                    Go to:
                 </Typography>
                 <Link href='projects' passHref>
                     <Button>Projects</Button>
                 </Link>
-                <Button style='secondary'>About me</Button>
+                <Link href='about' passHref>
+                    <Button style='secondary'>About me</Button>
+                </Link>
+                <Link href='contact' passHref>
+                    <Button style='secondary'>Contact</Button>
+                </Link>
                 <Button
                     style='secondary'
                     href='https://github.com/PeanutButte7'

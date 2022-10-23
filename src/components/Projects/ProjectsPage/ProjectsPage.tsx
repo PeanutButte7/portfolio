@@ -21,11 +21,11 @@ interface ProjectsPageProps {
     projects: Project[];
 }
 
-export function ProjectsPage({projects}: ProjectsPageProps) {
+export function ProjectsPage({ projects }: ProjectsPageProps) {
     const filters = [
-        {type: Filter.Web, label: 'Web apps'},
-        {type: Filter.Design, label: 'Designs'},
-        {type: Filter.Game, label: 'Games'},
+        { type: Filter.Web, label: 'Web apps' },
+        { type: Filter.Design, label: 'Designs' },
+        { type: Filter.Game, label: 'Games' },
     ];
 
     const [filteredProjects, setFilteredProjects] = useState(projects);
@@ -51,7 +51,7 @@ export function ProjectsPage({projects}: ProjectsPageProps) {
     return (
         <ProjectsPageStyled>
             <Filters>
-                {filters.map(({label, type}) => (
+                {filters.map(({ label, type }) => (
                     <FilterButton
                         accentColor={getAccentColor(type)}
                         mainColor={getMainColor(type)}
@@ -59,9 +59,9 @@ export function ProjectsPage({projects}: ProjectsPageProps) {
                         key={type}
                         onClick={() => filterProjects(type)}
                     >
-                        {type == Filter.Web && <IconWorld/>}
-                        {type == Filter.Design && <IconDragDrop/>}
-                        {type == Filter.Game && <IconBrandAppleArcade/>}
+                        {type == Filter.Web && <IconWorld />}
+                        {type == Filter.Design && <IconDragDrop />}
+                        {type == Filter.Game && <IconBrandAppleArcade />}
                         {label}
                     </FilterButton>
                 ))}
@@ -69,7 +69,7 @@ export function ProjectsPage({projects}: ProjectsPageProps) {
             <ProjectCardRow>
                 <ScrollContainer>
                     {filteredProjects.map((project) => (
-                        <ProjectCard key={project.id} project={project}/>
+                        <ProjectCard key={project.id} project={project} />
                     ))}
                 </ScrollContainer>
             </ProjectCardRow>
