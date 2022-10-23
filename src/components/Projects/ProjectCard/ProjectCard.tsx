@@ -27,14 +27,18 @@ export function ProjectCard({ project }: ProjectCardProps) {
                         {project.description}
                     </Typography>
                 </HeaderText>
-                <HeaderLink onClick={() => window.open(project.link, '_blank')}>
-                    <IconExternalLink />
-                    <Typography type='paragraph' size='xxl'>
-                        Learn
-                        <br />
-                        more
-                    </Typography>
-                </HeaderLink>
+                {project.link && (
+                    <HeaderLink
+                        onClick={() => window.open(project.link, '_blank')}
+                    >
+                        <IconExternalLink />
+                        <Typography type='paragraph' size='xxl'>
+                            Learn
+                            <br />
+                            more
+                        </Typography>
+                    </HeaderLink>
+                )}
             </Header>
             <Line />
             <img src={project.image} alt={project.title} />
