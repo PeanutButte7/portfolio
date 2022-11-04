@@ -1,7 +1,7 @@
-import { Layout } from '../components/Layout';
-import { AboutPage } from '../components/About';
-import { GetStaticProps } from 'next';
-import { getSkillGroupsData } from '../../lib/skillGroups';
+import {Layout} from '../components/Layout';
+import {AboutPage} from '../components/AboutPage';
+import {GetStaticProps} from 'next';
+import {getSkillGroupsData} from '../../lib/skillGroups';
 
 export interface SkillGroup {
     id: string;
@@ -13,10 +13,10 @@ interface AboutProps {
     skillGroups: SkillGroup[];
 }
 
-export default function About({ skillGroups }: AboutProps) {
+export default function About({skillGroups}: AboutProps) {
     return (
-        <Layout headerText='About me_'>
-            <AboutPage skillGroups={skillGroups} />
+        <Layout headerText="About me_">
+            <AboutPage skillGroups={skillGroups}/>
         </Layout>
     );
 }

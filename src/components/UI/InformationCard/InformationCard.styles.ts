@@ -1,6 +1,6 @@
-import { styled } from 'styles';
+import {styled} from 'styles';
 
-export const AboutCardStyled = styled('div', {
+export const InformationCardStyled = styled('div', {
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-between',
