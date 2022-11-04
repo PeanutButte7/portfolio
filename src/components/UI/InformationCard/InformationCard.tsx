@@ -7,16 +7,19 @@ interface InformationCardProps {
     children?: ReactNode;
     mainColor?: string;
     accentColor?: string;
+    tight?: boolean;
 }
 
 export function InformationCard({
                                     title,
+                                    children,
                                     mainColor = '$almostWhite',
                                     accentColor = '$almostGrey',
-                                    children
+                                    tight
                                 }: InformationCardProps) {
     return (
         <InformationCardStyled
+            tight={tight}
             css={{
                 color: accentColor,
                 backgroundColor: mainColor,

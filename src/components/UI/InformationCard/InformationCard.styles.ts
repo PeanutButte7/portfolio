@@ -11,15 +11,23 @@ export const InformationCardStyled = styled('div', {
     border: '4px solid $almostBlack',
     borderRadius: '10px',
 
-    'p:first-child': {
-        textAlign: 'center',
-    },
-
     '@desktop': {
         minWidth: '20rem',
         minHeight: '30rem',
         px: '1.5vw',
     },
+
+    variants: {
+        tight: {
+            true: {
+                minHeight: 0,
+            }
+        }
+    },
+
+    defaultVariants: {
+        tight: false,
+    }
 });
 
 export const Line = styled('hr', {
