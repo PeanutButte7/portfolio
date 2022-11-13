@@ -6,5 +6,5 @@ description: One of my first logo designs for a client. Even without my active
 priority: 0
 link: https://www.parkourpraha.cz/
 type: design
-image: https://www.adam-barta.com/img/GPFC.02a3e3cc.png
+image: img/gpfc.png
 ---

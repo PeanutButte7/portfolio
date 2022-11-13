@@ -5,5 +5,5 @@ description: "Design for a client website focused on listing and entering
   minimalistic look. "
 priority: 0
 type: design
-image: https://www.adam-barta.com/img/PDD.3e211508.png
+image: img/pdd.png
 ---

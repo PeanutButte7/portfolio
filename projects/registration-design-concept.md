@@ -4,5 +4,5 @@ description: A design concept for a Fiverr like website with Dashboards and
   Registration pages.
 priority: 0
 type: design
-image: https://www.adam-barta.com/img/SiteConcept.c294c65e.png
+image: img/siteconcept.png
 ---
