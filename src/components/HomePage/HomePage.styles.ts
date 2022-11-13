@@ -56,7 +56,7 @@ export const Headline = styled('h1', {
     fontFamily: '$robotoFlex',
     fontVariationSettings: '\'wdth\' 145, \'wght\' 1000, \'opsz\' 100',
     lineHeight: 1.3,
-    fontSize: 46,
+    fontSize: 38,
     marginLeft: '-20vw',
     paddingLeft: '20vw',
     py: '10px',
@@ -74,6 +74,6 @@ export const Headline = styled('h1', {
     },
 
     '@desktopXL': {
-        fontSize: 94,
+        fontSize: 86,
     },
 });

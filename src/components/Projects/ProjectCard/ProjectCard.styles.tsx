@@ -23,7 +23,6 @@ export const ProjectCardStyled = styled('div', {
 
     '&:hover': {
         border: '6px solid $colors$almostBlack',
-
     }
 });
 

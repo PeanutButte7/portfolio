@@ -8,7 +8,7 @@ export function HomePage() {
         <HomeStyled>
             <div>
                 <Name>Adam Bárta</Name>
-                <Headline>Developer, designer, writer_</Headline>
+                <Headline>#developer #designer #writer_</Headline>
             </div>
             <ButtonRow>
                 <Typography size="lg" type="h3">

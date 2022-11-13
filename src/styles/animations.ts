@@ -2,7 +2,7 @@ import {keyframes} from '@stitches/react';
 
 export const slideInBottom = keyframes({
     '0%': {
-        transform: 'translateY(100%)',
+        transform: 'translateY(50%)',
         opacity: 0,
     },
     '50%': {

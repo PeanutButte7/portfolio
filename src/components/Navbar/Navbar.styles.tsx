@@ -3,18 +3,14 @@ import {styled} from 'styles';
 export const NavbarStyled = styled('div', {
     display: 'flex',
     alignItems: 'center',
-    position: 'fixed',
-    width: '100%',
-    bottom: 0,
-    zIndex: 1,
-
     flexDirection: 'row',
     justifyContent: 'space-between',
     px: '10vw',
     py: '1.2rem',
 
     backgroundColor: '$almostWhite',
-    borderTop: '2px solid $almostGrey',
+    borderBottom: '2px solid $almostGrey',
+    borderTop: 'none',
 
     '& p': {
         cursor: 'pointer',
@@ -24,12 +20,6 @@ export const NavbarStyled = styled('div', {
         },
     },
 
-    '@desktop': {
-        position: 'static',
-        borderBottom: '2px solid $almostGrey',
-        borderTop: 'none',
-        py: '1rem',
-    },
 });
 
 export const RightSection = styled('div', {
@@ -60,11 +50,18 @@ export const LeftSection = styled('div', {
     },
 
     '& > img': {
-        width: 48,
-        height: 48,
-        borderRadius: '50%',
-        border: '2px solid $almostGrey',
+        display: 'none',
     },
+
+    '@desktop': {
+        '& > img': {
+            display: 'block',
+            width: 48,
+            height: 48,
+            borderRadius: '50%',
+            border: '2px solid $almostGrey',
+        },
+    }
 });
 
 export const NavigationText = styled('span', {
