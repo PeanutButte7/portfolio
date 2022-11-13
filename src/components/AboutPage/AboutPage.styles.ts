@@ -1,4 +1,4 @@
-import { styled } from 'styles';
+import {styled} from 'styles';
 
 export const AboutCardGroup = styled('div', {
     display: 'flex',
@@ -14,8 +14,31 @@ export const AboutPageStyled = styled('div', {
     display: 'flex',
     flexDirection: 'column',
     gap: '2rem',
+});
+
+export const Description = styled('div', {
+
+    '& > img': {
+        float: 'left',
+        marginRight: '1.5rem',
+
+        width: 100,
+        height: 100,
+        borderRadius: '20%',
+        color: '$almostGrey',
+        border: '4px solid $almostBlack',
+    },
 
     '@desktop': {
+        display: 'flex',
+        alignItems: 'center',
+        gap: '2rem',
+
+        '& > img': {
+            float: 'none',
+            marginRight: '0',
+        },
+
         '& > p': {
             width: '60vw',
         },

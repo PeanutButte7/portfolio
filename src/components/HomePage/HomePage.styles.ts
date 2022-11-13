@@ -1,4 +1,4 @@
-import { styled } from 'styles';
+import {styled} from 'styles';
 
 export const HomeStyled = styled('div', {
     display: 'flex',
@@ -35,7 +35,7 @@ export const ButtonRow = styled('div', {
 export const Name = styled('h4', {
     color: '$highContrastText',
     fontFamily: '$robotoFlex',
-    fontVariationSettings: "'wdth' 150, 'wght' 400",
+    fontVariationSettings: '\'wdth\' 150, \'wght\' 500',
     fontSize: '$lg',
 
     '@desktop': {
@@ -50,7 +50,7 @@ export const Name = styled('h4', {
 export const Headline = styled('h1', {
     color: '$highContrastText',
     fontFamily: '$robotoFlex',
-    fontVariationSettings: "'wdth' 145, 'wght' 1000, 'opsz' 100",
+    fontVariationSettings: '\'wdth\' 145, \'wght\' 1000, \'opsz\' 100',
     lineHeight: 1.3,
     fontSize: 46,
     marginLeft: '-20vw',

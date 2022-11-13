@@ -6,8 +6,10 @@ import Link from 'next/link';
 export function HomePage() {
     return (
         <HomeStyled>
-            <Name>Adam Bárta</Name>
-            <Headline>Developer, designer, writer_</Headline>
+            <div>
+                <Name>Adam Bárta</Name>
+                <Headline>Developer, designer, writer_</Headline>
+            </div>
             <ButtonRow>
                 <Typography size="lg" type="h3">
                     Go to:
