@@ -1,12 +1,9 @@
 import {InformationCard, Typography} from 'components/UI';
-import {SkillGroup} from 'pages/about';
 import {AboutCardGroup, AboutPageStyled} from './AboutPage.styles';
+import skillGroups from './skillGroups.json';
 
-interface AboutPageProps {
-    skillGroups: SkillGroup[];
-}
+export function AboutPage() {
 
-export function AboutPage({skillGroups}: AboutPageProps) {
     return (
         <AboutPageStyled>
             <Typography size="lg">
@@ -21,8 +18,8 @@ export function AboutPage({skillGroups}: AboutPageProps) {
                 games.
             </Typography>
             <AboutCardGroup>
-                {skillGroups.map(({title, skills}, groupIndex) => (
-                    <InformationCard title={title} key={groupIndex}>
+                {skillGroups.map(({title, skills, mainColor, accentColor}, groupIndex) => (
+                    <InformationCard title={title} key={groupIndex} mainColor={mainColor} accentColor={accentColor}>
                         {skills.map((skill, skillIndex) => (
                             <Typography size="lg" type="skill" key={skillIndex}>
                                 # {skill}

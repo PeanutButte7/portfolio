@@ -48,26 +48,6 @@ export default {
                     widget: 'image',
                 },
             ],
-        },
-        {
-            name: 'skillGroups',
-            label: 'Skill Groups',
-            folder: 'skillGroups',
-            create: true,
-            fields: [
-                {
-                    name: 'title',
-                    label: 'Title',
-                    widget: 'string',
-                },
-                {
-                    name: 'skills',
-                    label: 'Skills',
-                    widget: 'list',
-                    field: { label: 'Skill', name: 'skill', widget: 'string' },
-                    summary: '{{fields.skill}}',
-                },
-            ],
-        },
+        }
     ],
 };

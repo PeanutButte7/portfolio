@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Web stack",
+    "skills": [
+      "Javascript, Typescript",
+      "React, Next.js, Redux",
+      "Stitches CSS, Tailwind",
+      "Git"
+    ],
+    "mainColor": "#D6F8D6",
+    "accentColor": "#7FB77E"
+  },
+  {
+    "title": "Design",
+    "skills": [
+      "Figma",
+      "Photoshop, Illustrator",
+      "Lightroom"
+    ],
+    "mainColor": "#BCD4FF",
+    "accentColor": "#7AAAFF"
+  },
+  {
+    "title": "Other",
+    "skills": [
+      "Sony Vegas, DaVinci Resolve",
+      "Copywriting, voiceovers",
+      "Unity, Unreal Engine",
+      "Java, C#"
+    ],
+    "mainColor": "#FFFFFE",
+    "accentColor": "#2A2A2A"
+  }
+]
