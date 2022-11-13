@@ -1,4 +1,4 @@
-import { styled } from 'styles';
+import {styled} from 'styles';
 
 export const NavbarStyled = styled('div', {
     display: 'flex',
@@ -39,6 +39,31 @@ export const RightSection = styled('div', {
 
     '@desktop': {
         gap: 20,
+    },
+});
+
+export const LeftSection = styled('div', {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '1rem',
+
+    '&:hover': {
+        cursor: 'pointer',
+
+        '& img': {
+            border: '3px solid $almostGrey',
+        },
+
+        '& p': {
+            textDecoration: 'underline',
+        }
+    },
+
+    '& > img': {
+        width: 48,
+        height: 48,
+        borderRadius: '50%',
+        border: '2px solid $almostGrey',
     },
 });
 
