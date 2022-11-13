@@ -1,6 +1,8 @@
 import {styled} from 'styles';
+import {slideInBottom} from 'styles/animations';
 
 export const AboutCardGroup = styled('div', {
+    animation: `${slideInBottom} 0.3s ease-out`,
     display: 'flex',
     flexDirection: 'column',
     gap: '2rem',
@@ -17,7 +19,7 @@ export const AboutPageStyled = styled('div', {
 });
 
 export const Description = styled('div', {
-
+    animation: `${slideInBottom} 0.3s ease-out`,
     '& > img': {
         float: 'left',
         marginRight: '1.5rem',

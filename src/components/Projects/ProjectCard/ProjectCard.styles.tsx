@@ -1,4 +1,4 @@
-import { styled } from 'styles';
+import {styled} from 'styles';
 
 export const ProjectCardStyled = styled('div', {
     display: 'flex',
@@ -6,7 +6,9 @@ export const ProjectCardStyled = styled('div', {
     alignItems: 'center',
     paddingTop: 20,
     justifyContent: 'space-between',
+    position: 'relative',
 
+    transition: 'all 0.05s ease-in-out',
     border: '4px solid $colors$almostBlack',
     borderRadius: '10px',
     overflow: 'hidden',
@@ -18,6 +20,11 @@ export const ProjectCardStyled = styled('div', {
         width: 560,
         gap: 20,
     },
+
+    '&:hover': {
+        border: '6px solid $colors$almostBlack',
+
+    }
 });
 
 export const Header = styled('div', {
@@ -57,10 +64,16 @@ export const HeaderLink = styled('div', {
 
         '& p': {
             color: '$almostBlack',
-            fontVariationSettings: "'wdth' 120, 'wght' 500",
+            fontVariationSettings: '\'wdth\' 120, \'wght\' 500',
             lineHeight: '32px',
         },
     },
+
+    '&:hover': {
+        '& p': {
+            textDecoration: 'underline',
+        }
+    }
 });
 
 export const Line = styled('hr', {

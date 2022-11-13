@@ -1,8 +1,8 @@
-import { createStitches } from '@stitches/react';
+import {createStitches} from '@stitches/react';
 
-export type { VariantProps } from '@stitches/react';
+export type {VariantProps} from '@stitches/react';
 
-export const { styled, css, getCssText, config } = createStitches({
+export const {styled, css, getCssText, config} = createStitches({
     media: {
         mobile: '(min-width: 300px)', // Iphone SE
         mobileXL: '(min-width:  376px)', // Iphone X, Iphone 8

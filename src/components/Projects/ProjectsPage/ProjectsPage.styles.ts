@@ -1,4 +1,5 @@
-import { styled } from 'styles';
+import {styled} from 'styles';
+import {slideInBottom} from 'styles/animations';
 
 export const ProjectsPageStyled = styled('div', {
     display: 'flex',
@@ -11,6 +12,8 @@ export const ProjectsPageStyled = styled('div', {
 });
 
 export const ProjectCardRow = styled('div', {
+    animation: `${slideInBottom} 0.3s ease-out`,
+
     '& > div': {
         display: 'flex',
         flexDirection: 'column',
@@ -32,6 +35,8 @@ export const ProjectCardRow = styled('div', {
 });
 
 export const Filters = styled('div', {
+    animation: `${slideInBottom} 0.3s ease-out`,
+
     display: 'flex',
     flexDirection: 'row',
     flexWrap: 'nowrap',

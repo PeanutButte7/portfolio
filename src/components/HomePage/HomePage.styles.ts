@@ -1,4 +1,5 @@
 import {styled} from 'styles';
+import {slideInLeft} from 'styles/animations';
 
 export const HomeStyled = styled('div', {
     display: 'flex',
@@ -18,6 +19,7 @@ export const HomeStyled = styled('div', {
 });
 
 export const ButtonRow = styled('div', {
+    animation: `${slideInLeft} 1s ease-out`,
     display: 'flex',
     gap: 15,
     flexDirection: 'column',
@@ -33,6 +35,7 @@ export const ButtonRow = styled('div', {
 });
 
 export const Name = styled('h4', {
+    animation: `${slideInLeft} 0.7s ease-out`,
     color: '$highContrastText',
     fontFamily: '$robotoFlex',
     fontVariationSettings: '\'wdth\' 150, \'wght\' 500',
@@ -48,6 +51,7 @@ export const Name = styled('h4', {
 });
 
 export const Headline = styled('h1', {
+    animation: `${slideInLeft} 0.7s ease-out`,
     color: '$highContrastText',
     fontFamily: '$robotoFlex',
     fontVariationSettings: '\'wdth\' 145, \'wght\' 1000, \'opsz\' 100',

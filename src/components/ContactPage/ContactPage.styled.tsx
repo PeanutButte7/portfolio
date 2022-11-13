@@ -1,6 +1,8 @@
 import {styled} from 'styles';
+import {slideInBottom} from '../../styles/animations';
 
 export const ContactPageStyled = styled('div', {
+    animation: `${slideInBottom} 0.3s ease-out`,
     display: 'flex',
     flexDirection: 'column',
     gap: '2rem',

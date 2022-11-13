@@ -1,4 +1,5 @@
-import { styled } from 'styles';
+import {styled} from 'styles';
+import {fadeIn} from '../../styles/animations';
 
 export const LayoutStyled = styled('div', {
     display: 'flex',
@@ -7,6 +8,7 @@ export const LayoutStyled = styled('div', {
     height: '100%',
 
     '& > p': {
+        animation: `${fadeIn} 0.5s ease-in-out`,
         paddingLeft: '10vw',
         paddingTop: '1rem',
         marginBottom: '2rem',
