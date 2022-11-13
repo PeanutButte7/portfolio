@@ -9,7 +9,10 @@ export function Navbar() {
             <NavbarStyled>
                 <Link href="/" passHref>
                     <LeftSection>
-                        <img src="/img/headshot.jpg" alt="Adam Barta"/>
+                        <picture>
+                            <source srcSet="/img/headshot.jpg" type="image/jpg"/>
+                            <img src="/img/headshot.jpg" alt="Adam Bárta"/>
+                        </picture>
                         <Typography type="h3" size="xxl">
                             Adam Bárta
                         </Typography>

@@ -35,7 +35,7 @@ export const Button = forwardRef<ButtonRef, ButtonProps>(
                 style={style}
                 {...props}
             >
-                <a type="button" href={href} target={external ? '_blank' : '_self'}>
+                <a type="button" href={href} target={external ? '_blank' : '_self'} rel="noreferrer">
                     {children}
                 </a>
             </ButtonStyled>

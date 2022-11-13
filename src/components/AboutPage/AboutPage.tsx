@@ -7,10 +7,13 @@ export function AboutPage() {
     return (
         <AboutPageStyled>
             <Description>
-                <img src="/img/headshot.jpg" alt="Adam Barta"/>
+                <picture>
+                    <source srcSet="/img/headshot.jpg" type="image/jpg"/>
+                    <img src="/img/headshot.jpg" alt="Adam Bárta"/>
+                </picture>
                 <Typography size="lg">
-                    Hi! I'm Adam, a front-end web developer with a passion for UI
-                    and UX design. When I'm not coding I spend my time working as a
+                    Hi! I&apos;m Adam, a front-end web developer with a passion for UI
+                    and UX design. When I&apos;m not coding I spend my time working as a
                     journalist for a Czech gaming medium
                     <a href="components/AboutPage/AboutPage" target="_blank">
                         {' '}

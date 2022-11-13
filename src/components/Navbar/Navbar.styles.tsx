@@ -49,12 +49,12 @@ export const LeftSection = styled('div', {
         }
     },
 
-    '& > img': {
+    '& img': {
         display: 'none',
     },
 
     '@desktop': {
-        '& > img': {
+        '& img': {
             display: 'block',
             width: 48,
             height: 48,

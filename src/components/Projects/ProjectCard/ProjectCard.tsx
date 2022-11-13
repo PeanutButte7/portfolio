@@ -1,29 +1,23 @@
-import { Typography } from 'components/UI';
-import { Project } from 'pages/projects';
-import {
-    Header,
-    HeaderLink,
-    HeaderText,
-    Line,
-    ProjectCardStyled,
-} from './ProjectCard.styles';
-import { IconExternalLink } from '@tabler/icons';
+import {Typography} from 'components/UI';
+import {Project} from 'pages/projects';
+import {Header, HeaderLink, HeaderText, Line, ProjectCardStyled,} from './ProjectCard.styles';
+import {IconExternalLink} from '@tabler/icons';
 
 interface ProjectCardProps {
     project: Project;
 }
 
-export function ProjectCard({ project }: ProjectCardProps) {
+export function ProjectCard({project}: ProjectCardProps) {
     return (
         <ProjectCardStyled
-            css={{ backgroundColor: getCardColor(project.type) }}
+            css={{backgroundColor: getCardColor(project.type)}}
         >
             <Header>
                 <HeaderText>
-                    <Typography type='h2' size='xxl'>
+                    <Typography type="h2" size="xxl">
                         {project.title}
                     </Typography>
-                    <Typography type='paragraph' size='sm'>
+                    <Typography type="paragraph" size="sm">
                         {project.description}
                     </Typography>
                 </HeaderText>
@@ -31,17 +25,20 @@ export function ProjectCard({ project }: ProjectCardProps) {
                     <HeaderLink
                         onClick={() => window.open(project.link, '_blank')}
                     >
-                        <IconExternalLink />
-                        <Typography type='paragraph' size='xxl'>
+                        <IconExternalLink/>
+                        <Typography type="paragraph" size="xxl">
                             Learn
-                            <br />
+                            <br/>
                             more
                         </Typography>
                     </HeaderLink>
                 )}
             </Header>
-            <Line />
-            <img src={project.image} alt={project.title} />
+            <Line/>
+            <picture>
+                <source srcSet={project.image}/>
+                <img src={project.image} alt={project.title}/>
+            </picture>
         </ProjectCardStyled>
     );
 }

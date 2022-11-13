@@ -20,7 +20,7 @@ export const AboutPageStyled = styled('div', {
 
 export const Description = styled('div', {
     animation: `${slideInBottom} 0.3s ease-out`,
-    '& > img': {
+    '& img': {
         float: 'left',
         marginRight: '1.5rem',
 
@@ -36,7 +36,7 @@ export const Description = styled('div', {
         alignItems: 'center',
         gap: '2rem',
 
-        '& > img': {
+        '& img': {
             float: 'none',
             marginRight: '0',
         },
