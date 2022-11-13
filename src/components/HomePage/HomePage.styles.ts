@@ -40,6 +40,7 @@ export const Name = styled('h4', {
     fontFamily: '$robotoFlex',
     fontVariationSettings: '\'wdth\' 150, \'wght\' 500',
     fontSize: '$lg',
+    marginBottom: '1rem',
 
     '@desktop': {
         fontSize: 32,
@@ -66,7 +67,7 @@ export const Headline = styled('h1', {
     backgroundSize: '700px, 700px',
 
     '@mobileXL': {
-        fontSize: 52,
+        fontSize: 42,
     },
 
     '@desktop': {
