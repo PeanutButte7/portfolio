@@ -27,8 +27,7 @@ export const Button = forwardRef<ButtonRef, ButtonProps>(
                         ? size
                         : {
                             '@initial': 'large',
-                            '@mobile': 'small',
-                            '@mobileXL': 'medium',
+                            '@mobile': 'medium',
                             '@desktop': 'large',
                         }
                 }

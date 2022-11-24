@@ -23,6 +23,9 @@ export const ButtonRow = styled('div', {
     display: 'flex',
     gap: 15,
     flexDirection: 'column',
+    p: {
+        fontSize: '$lg',
+    },
 
     '@desktop': {
         flexDirection: 'row',

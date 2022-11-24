@@ -1,10 +1,10 @@
-import { styled } from 'styles';
+import {styled} from 'styles';
 
 export const ButtonStyled = styled('button', {
     position: 'relative',
 
     fontFamily: '$robotoFlex',
-    fontVariationSettings: "'wdth' 120, 'wght' 600",
+    fontVariationSettings: '\'wdth\' 120, \'wght\' 600',
 
     boxShadow: '5px 5px 0px 0px $colors$almostBlack',
     border: '3px solid $almostBlack',
@@ -64,6 +64,7 @@ export const ButtonStyled = styled('button', {
             },
             medium: {
                 px: '15px',
+                py: '5px',
 
                 a: {
                     fontSize: '$lg',
