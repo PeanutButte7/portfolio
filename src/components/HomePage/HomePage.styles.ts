@@ -5,7 +5,7 @@ export const HomeStyled = styled('div', {
     display: 'flex',
     flexDirection: 'column',
     gap: 20,
-    marginTop: '10vh',
+    paddingTop: '10vh',
     mx: '10vw',
 
     '@desktopXL': {
@@ -14,7 +14,7 @@ export const HomeStyled = styled('div', {
 
     '@desktop': {
         gap: 32,
-        marginTop: '20vh',
+        paddingTop: '30vh',
     },
 });
 
