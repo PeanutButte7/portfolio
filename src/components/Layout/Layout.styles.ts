@@ -6,6 +6,7 @@ export const LayoutStyled = styled('div', {
     flexDirection: 'column',
     backgroundColor: '$lightTurquoise',
     minHeight: '100vh',
+    paddingBottom: '2rem',
 
     '& > p': {
         animation: `${fadeIn} 0.5s ease-in-out`,
