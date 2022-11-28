@@ -70,14 +70,41 @@ export const Headline = styled('h1', {
     backgroundSize: '700px, 700px',
 
     '@mobileXL': {
-        fontSize: 42,
+        fontSize: 40,
     },
 
     '@desktop': {
         fontSize: 72,
+        br: {
+            display: 'none',
+        }
     },
 
     '@desktopXL': {
         fontSize: 86,
+        br: {
+            display: 'none',
+        }
+    },
+});
+
+export const Line = styled('div', {
+    borderBottom: '2px solid $almostGrey',
+    width: '90%',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    marginTop: '0.2rem',
+
+    '@desktop': {
+        // Cleans mobile line
+        borderBottom: 'none',
+        width: 0,
+        marginRight: 0,
+
+        // Adds desktop line
+        borderLeft: '2px solid $almostGrey',
+        height: '2.5rem',
+        marginTop: '0.2rem',
+        marginLeft: '0.3rem',
     },
 });

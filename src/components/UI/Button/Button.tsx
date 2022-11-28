@@ -14,12 +14,14 @@ export interface ButtonProps
     children: ReactNode;
     href?: string;
     external?: boolean;
+    css?: any;
 }
 
 export const Button = forwardRef<ButtonRef, ButtonProps>(
-    ({children, type, style, size, href, external, ...props}: ButtonProps, ref) => {
+    ({children, type, style, size, href, external, css, ...props}: ButtonProps, ref) => {
         return (
             <ButtonStyled
+                css={css}
                 ref={ref}
                 type={type}
                 size={

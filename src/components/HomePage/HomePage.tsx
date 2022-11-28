@@ -1,5 +1,5 @@
 import {IconExternalLink} from '@tabler/icons';
-import {ButtonRow, Headline, HomeStyled, Name} from './HomePage.styles';
+import {ButtonRow, Headline, HomeStyled, Line, Name} from './HomePage.styles';
 import {Button, Typography} from 'components/UI';
 import Link from 'next/link';
 
@@ -8,7 +8,7 @@ export function HomePage() {
         <HomeStyled>
             <div>
                 <Name>Adam Bárta</Name>
-                <Headline>#developer #designer #writer_</Headline>
+                <Headline>#developer <br/>#designer <br/>#writer_</Headline>
             </div>
             <ButtonRow>
                 <Typography size="lg" type="h3">
@@ -23,12 +23,23 @@ export function HomePage() {
                 <Link href="contact" passHref>
                     <Button style="secondary">Contact</Button>
                 </Link>
+                <Line/>
                 <Button
+                    css={{backgroundColor: '#ddecff'}}
                     style="secondary"
                     href="https://github.com/PeanutButte7"
                     external
                 >
                     Github
+                    <IconExternalLink/>
+                </Button>
+                <Button
+                    css={{backgroundColor: '#fdedff'}}
+                    style="secondary"
+                    href="https://dribbble.com/AdamBarta"
+                    external
+                >
+                    Dribbble
                     <IconExternalLink/>
                 </Button>
             </ButtonRow>
