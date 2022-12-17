@@ -5,5 +5,5 @@ description: "Design for a client website focused on listing and entering
   minimalistic look. "
 priority: 0
 type: design
-image: img/pdd.png
+image: img/pdd-min.jpg
 ---
