@@ -2,9 +2,6 @@ import { styled } from 'styles';
 import { slideInLeft } from '../../styles/animations';
 
 export const DesktopNavbarStyled = styled('div', {
-    '@desktop': {
-        display: 'flex',
-    },
     display: 'none',
     alignItems: 'center',
     flexDirection: 'row',
@@ -22,6 +19,10 @@ export const DesktopNavbarStyled = styled('div', {
         '&:hover': {
             textDecoration: 'underline',
         },
+    },
+
+    '@desktop': {
+        display: 'flex',
     },
 });
 
@@ -64,10 +65,6 @@ export const ImageSection = styled('div', {
 });
 
 export const MobileNavbarStyled = styled('div', {
-    '@desktop': {
-        display: 'none',
-    },
-
     display: 'flex',
     alignItems: 'center',
     flexDirection: 'row',
@@ -78,6 +75,10 @@ export const MobileNavbarStyled = styled('div', {
     backgroundColor: '$almostWhite',
     borderBottom: '2px solid $almostGrey',
     borderTop: 'none',
+
+    '@desktop': {
+        display: 'none',
+    },
 });
 
 export const MobileMenuOverlay = styled('div', {
