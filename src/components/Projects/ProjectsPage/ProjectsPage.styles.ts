@@ -44,7 +44,7 @@ export const Filters = styled('div', {
 
     alignItems: 'flex-start',
     gap: 15,
-    marginLeft: '10vw',
+    px: '10vw',
     paddingBottom: '1rem',
 
     '@desktop': {
