@@ -14,7 +14,7 @@ enum Filter {
     All = 'all',
     Web = 'web',
     Design = 'design',
-    Game = 'games',
+    Game = 'game',
 }
 
 interface ProjectsPageProps {

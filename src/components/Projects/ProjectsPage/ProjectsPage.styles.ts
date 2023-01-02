@@ -1,5 +1,5 @@
-import {styled} from 'styles';
-import {slideInBottom} from 'styles/animations';
+import { styled } from 'styles';
+import { slideInBottom } from 'styles/animations';
 
 export const ProjectsPageStyled = styled('div', {
     display: 'flex',
@@ -21,6 +21,7 @@ export const ProjectCardRow = styled('div', {
         px: '10vw',
         flexWrap: 'nowrap',
 
+        paddingTop: '3px',
         overflowX: 'auto',
         cursor: 'grab',
     },
